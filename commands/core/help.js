@@ -11,9 +11,9 @@ module.exports = {
 
             message.channel.send({
                 embed: {
-                    color: 'ORANGE',
+                    color: 'RANDOM',
                     author: { name: '도움말' },
-                    footer: { text: '조미료는 원래 조미래라는 분과 분리가 되서 생긴겁니다.' },
+                    footer: { text: '조미료는 원래 조미래라는 분과 분리가 되서 생긴겁니다.\n참고:\n특정명령의에 의한 도움말을 얻으시고 싶으시면\n(시즈닝) {도움} [원하시는 명령어] 로 찾으실수있습니다.' },
                     fields: [
                         { name: '봇', value: infos },
                         { name: '음악', value: music },
@@ -30,7 +30,7 @@ module.exports = {
 
             message.channel.send({
                 embed: {
-                    color: 'ORANGE',
+                    color: 'RANDOM',
                     author: { name: '도움말' },
                     footer: { text: '조미료는 원래 조미래라는 분과 분리가 되서 생긴겁니다.' },
                     fields: [

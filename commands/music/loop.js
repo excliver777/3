@@ -2,7 +2,7 @@ module.exports = {
     name: '반복',
     aliases: ['반복', '반복재생'],
     category: 'Music',
-    utilisation: '{prefix}loop',
+    utilisation: '{prefix}반복',
 
     execute(client, message, args) {
         if (!message.member.voice.channel) return message.channel.send(`${client.emotes.error}  보이스 채널 참가조옴 !`);

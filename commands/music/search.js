@@ -1,6 +1,6 @@
 module.exports = {
     name: '검색',
-    aliases: ['검ㅅ색'],
+    aliases: ['검색'],
     category: 'Music',
     utilisation: '{prefix}검색 [이름/URL]',
 

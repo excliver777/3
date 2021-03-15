@@ -2,7 +2,7 @@ module.exports = {
     name: '멈춰',
     aliases: ['멈춰', 'stop', '스탑'],
     category: 'Music',
-    utilisation: '{prefix}stop',
+    utilisation: '{prefix}스탑',
 
     execute(client, message) {
         if (!message.member.voice.channel) return message.channel.send(`${client.emotes.error} 보이스 채널 참가 부탁드립니다 손님^^`);

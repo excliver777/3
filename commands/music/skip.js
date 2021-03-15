@@ -2,7 +2,7 @@ module.exports = {
     name: '스킵',
     aliases: ['스킵', 'ㄱㄱ', '건너뛰기'],
     category: 'Music',
-    utilisation: '{prefix}skip',
+    utilisation: '{prefix}스킵',
 
     execute(client, message) {
         if (!message.member.voice.channel) return message.channel.send(`${client.emotes.error}  보이스 채널 참가조옴 !`);

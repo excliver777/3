@@ -2,7 +2,7 @@ module.exports = {
     name: '볼륨',
     aliases: ['볼륨'],
     category: 'Music',
-    utilisation: '{prefix}volume [1-100]',
+    utilisation: '{prefix}볼륨 [1-100]',
 
     execute(client, message, args) {
         if (!message.member.voice.channel) return message.channel.send(`${client.emotes.error}보이스 채널 참가좀!`);

@@ -2,7 +2,7 @@ module.exports = {
     name: '대기열청소',
     aliases: ['대기열청소'],
     category: 'Music',
-    utilisation: '{prefix}clear-queue',
+    utilisation: '{prefix}대기열청소',
 
     execute(client, message) {
         if (!message.member.voice.channel) return message.channel.send(`${client.emotes.error}  당신은 채널에 참가하지 않았습니다 !`);

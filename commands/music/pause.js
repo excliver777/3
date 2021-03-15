@@ -2,7 +2,7 @@ module.exports = {
     name: '일시정지',
     aliases: ['일시정지', '잠시만'],
     category: 'Music',
-    utilisation: '{prefix}pause',
+    utilisation: '{prefix}일시정지',
 
     execute(client, message) {
         if (!message.member.voice.channel) return message.channel.send(`${client.emotes.error}   보이스 채널 참가조옴 !`);
