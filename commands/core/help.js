@@ -1,6 +1,6 @@
 module.exports = {
-    name: '도움',
-    aliases: ['도움'],
+    name: '음악도움',
+    aliases: ['음악도움'],
     category: 'Core',
     utilisation: '{prefix}도움 <명령어>',
 
@@ -13,14 +13,14 @@ module.exports = {
                 embed: {
                     color: 'RANDOM',
                     author: { name: '도움말' },
-                    footer: { text: '조미료는 원래 조미래라는 분과 분리가 되서 생긴겁니다.\n참고:\n특정명령의에 의한 도움말을 얻으시고 싶으시면\n(시즈닝) {도움} [원하시는 명령어] 로 찾으실수있습니다.' },
+                    footer: { text: '감사합니다.' },
                     fields: [
                         { name: '봇', value: infos },
                         { name: '음악', value: music },
-                        { name: '봇에 들어간 재료들', value: client.filters.map((x) => '`' + x + '`').join(', ') },
+                        { name: '-------------------추가정보------------------', value: client.filters.map((x) => '`' + x + '`').join(', ') },
                     ],
                     timestamp: new Date(),
-                    description: `"시즈닝" 을 붙여 명령해보세요`,
+                    description: `"!" 을 붙여 명령해보세요`,
                 },
             });
         } else {
@@ -32,15 +32,15 @@ module.exports = {
                 embed: {
                     color: 'RANDOM',
                     author: { name: '도움말' },
-                    footer: { text: '조미료는 원래 조미래라는 분과 분리가 되서 생긴겁니다.' },
+                    footer: { text: '감사합니다.' },
                     fields: [
-                        { name: 'name', value: command.name, inline: true },
-                        { name: 'Category', value: command.category, inline: true },
-                        { name: 'Aliase(s)', value: command.aliases.length < 1 ? 'None' : command.aliases.join(', '), inline: true },
-                        { name: 'Utilisation', value: command.utilisation.replace('{prefix}', client.config.discord.prefix), inline: true },
+                        { name: '이름', value: command.name, inline: true },
+                        { name: '분류', value: command.category, inline: true },
+                        { name: '명령어', value: command.aliases.length < 1 ? 'None' : command.aliases.join(', '), inline: true },
+                        { name: '권한', value: command.utilisation.replace('{prefix}', client.config.discord.prefix), inline: true },
                     ],
                     timestamp: new Date(),
-                    description: 'ㅇㅇㅇㅇ\nㅇㅇㅇㅇ `[]`, ㅇㅇㅇㅇ `<>`.',
+                    description: 'None',
                 }
             });
         };

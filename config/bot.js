@@ -8,10 +8,10 @@ module.exports = {
     },
 
     discord: {
-        token: 'ODE5NDQ4NzEzOTk4ODkzMDY2.YEmxFg.GBDZn8CaglBW69Low48qoamEqJI',
-        prefix: '시즈닝 ',
-        activity: '시즈닝 도움',
+        token: '',
+        prefix: '!',
+        activity: '!봇도움말',
     },
 
-    filters: ['msg(조미료)'],
+    filters: ['\n참고:\n특정명령의에 의한 도움말을 얻으시고 싶으시면\n(!) {음악도움} [원하시는 명령어] 로 찾으실수있습니다.'],
 };
